@@ -14,10 +14,12 @@ function App() {
   return (
     <div>
       <h1>検索フィルタアプリ</h1>
-      {/* SearchBarに検索処理関数を渡す */}
-      <SearchBar onSearch={setSearchTerm} />
-      {/* ItemListにフィルタリングされたアイテムを渡す */}
-      <ItemList items={filteredItems} />
+      <div className="container">
+        {/* SearchBarに検索処理関数を渡す */}
+        <SearchBar onSearch={setSearchTerm} />
+        {/* ItemListにフィルタリングされたアイテムを渡す */}
+        <ItemList items={filteredItems} />
+      </div>
     </div>
   );
 }
